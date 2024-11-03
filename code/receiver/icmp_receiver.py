@@ -1,3 +1,9 @@
-import scapy
+from scapy.all import *
 
-# Implement your ICMP receiver here
+def packet_receive(packet):
+    if packet.haslayer(ICMP):
+        if(packet[IP].ttl == 1):
+            print("Received ICMP Packet:")
+            packet.show()
+
+sniff(filter="icmp", prn=packet_receive, store=0)

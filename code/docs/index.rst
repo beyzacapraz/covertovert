@@ -6,7 +6,11 @@
 Basic ICMP Documentation
 ========================
 
-Please add your names and group ID here by editing `index.rst` in the docs folder.
+Group Information:
+Group ID: 54
+Members:
+- Beyza ÇAPRAZ, 2521383
+- Hüsna Aysu KAYA, 2521706
 
 
 .. toctree::
